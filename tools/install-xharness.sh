@@ -42,7 +42,7 @@ echo 'dotnet installed'
 export DOTNET_ROOT="$here/.dotnet"
 
 printf "Installing XHarness.CLI locally to \033[0;33m%s\033[0m..\n" "$here"
-./.dotnet/dotnet tool install --tool-path . --version "$xharness_version" --add-source https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json Microsoft.DotNet.XHarness.CLI
+./.dotnet/dotnet tool install --tool-path . --version "8.0.0-prerelease.23477.1" --add-source https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json Microsoft.DotNet.XHarness.CLI
 echo "XHarness.CLI installed"
 
 echo 'Run following command:'
